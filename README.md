@@ -2,6 +2,9 @@
 
 
 ## Hello to my first assignment :)
+My work on Stan from Gravity Falls, I wanted to take it in the direction of a cartoon character who is in his third age, I hope you will enjoy it.
+
+![Stan Pines](https://i.ytimg.com/vi/gIx_0ZJfa3c/mqdefault.jpg)
 <hr>
 ###############################################################
 <hr>
