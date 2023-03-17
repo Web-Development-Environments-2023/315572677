@@ -13,8 +13,13 @@ My work on Stan from Gravity Falls, I wanted to take it in the direction of a ca
 ```
  https://web-development-environments-2023.github.io/315572677/
 ```
-<hr>
 
+## 🛠 Skills in this assignment:
+HTML & CSS
+
+
+## Authors
+<hr>
 **Name**: Shay Giladi
 
 **ID**: 315572677

@@ -58,7 +58,7 @@
   </section>
 
   <section id="photos" class="section">
-    <a style="background-color: black;"><h1>This is my photos</h1></a><br><br><br><br>
+    <a style="background-color: black;"><h1>This are my photos</h1></a><br><br><br><br>
     
     <div class="responsive">
       <div class="gallery">
@@ -251,6 +251,7 @@
     <table border=4  cellpadding="0" cellspacing="0" bordercolor="red" align="center">
       <tr>
         <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 1.0</b></td>
+        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 2.0</b></td>
         <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 3.0</b></td>
       </tr>
       <tr>
@@ -258,6 +259,10 @@
           A search for "side effects of drugs" on Web1 would likely result in a list of static portal web pages that contain information on the topic.
            These pages would likely be simple HTML pages with text and images, and the information would be presented in a static format that is not interactive.
         </td>
+        <td>
+          A search for "side effects of drugs" on Web2 would likely provide a result in a list of dynamic web pages that contain information on the topic,
+           but it may require some filtering and prioritization to make the most of the available resources.
+            These pages would likely be built using JavaScript and Ajax, and the information would be presented in a dynamic format that is interactive.
         <td>
           It's difficult to predict exactly how a search query for "side effects of drugs" would appear on Web3, as it will depend on the specific decentralized application (dApp) or decentralized search engine used.
 For example, a decentralized app (dApp) built on blockchain technology could provide information on drug side effects in a more transparent and secure manner.
@@ -292,27 +297,36 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
         <div class="input-group">
           <label for="smiley">Select Smiley:</label>
           <select id="smiley" name="smiley">
-            <option value="happy">😀 Happy</option>
-            <option value="grinning">😁 Grinning</option>
-            <option value="smiling-eyes">😊 Smiling with Eyes</option>
-            <option value="cool">😎 Cool</option>
-            <option value="hearts">❤️ Hearts</option>
-            <option value="shushing">🤫 Shushing</option>
-            <option value="nerd">🤓 Nerd</option>
-            <option value="rolling-eyes">🙄 Rolling Eyes</option>
-            <option value="thinking">🤔 Thinking</option>
-            <option value="zipper-mouth">🤐 Zipper Mouth</option>
-            <option value="nauseated">🤢 Nauseated</option>
-            <option value="exploding">🤯 Exploding Head</option>
-            <option value="money-mouth">🤑 Money Mouth</option>
-            <option value="angry">😠 Angry</option>
-            <option value="sad">😔 Sad</option>
-            <option value="worried">😟 Worried</option>
-            <option value="crying">😢 Crying</option>
-            <option value="sweating">😓 Sweating</option>
-            <option value="sleeping">😴 Sleeping</option>
-            <option value="poop">💩 Poop</option>
+            <option value="😀">😀 Happy</option>
+            <option value="😁">😁 Grinning</option>
+            <option value="😊">😊 Smiling with Eyes</option>
+            <option value="😎">😎 Cool</option>
+            <option value="❤️">❤️ Hearts</option>
+            <option value="🤫">🤫 Shushing</option>
+            <option value="🤓">🤓 Nerd</option>
+            <option value="🙄">🙄 Rolling Eyes</option>
+            <option value="🤔">🤔 Thinking</option>
+            <option value="🤐">🤐 Zipper Mouth</option>
+            <option value="🤢">🤢 Nauseated</option>
+            <option value="🤯">🤯 Exploding Head</option>
+            <option value="🤑">🤑 Money Mouth</option>
+            <option value="😠">😠 Angry</option>
+            <option value="😔">😔 Sad</option>
+            <option value="😟">😟 Worried</option>
+            <option value="😢">😢 Crying</option>
+            <option value="😓">😓 Sweating</option>
+            <option value="😴">😴 Sleeping</option>
+            <option value="💩">💩 Poop</option>
           </select>
+          <input type="button" value="Add Emoji" onclick="addEmoji()" style="border-radius: 10px #0059ff; border: dotted; overflow: visible; width: 20%; color: aquamarine; filter: drop-shadow(10px 6px 3px #0059ff);">
+          <script>
+            function addEmoji() {
+              var selectValue = document.getElementById("smiley").value;
+              var textarea = document.getElementById("message");
+              textarea.value += selectValue;
+            }
+          </script>
+
         </div>
         <div class="input-group">
           <input type="submit" value="Submit">
@@ -320,6 +334,7 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
       </form>
     </div>
   </section>
+
 
 
   <script type="text/javascript">
