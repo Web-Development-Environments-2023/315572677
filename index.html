@@ -336,8 +336,7 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
           <script>
             function SendMEmail(){
               let content = "mailto:shaygila@post.bgu.ac.il?subject=Mail from my website--"
-              + "&body="+ "mail:  "  + encodeURIComponent(document.getElementById('email').value) 
-              + "   subjet:  " + encodeURIComponent(document.getElementById('subject').value)  
+              + "&body="+ "mail sender:  "  + encodeURIComponent(document.getElementById('email').value) 
               + "   content:   " +  encodeURIComponent(document.getElementById('message').value);
               window.location.href = content;
             }
