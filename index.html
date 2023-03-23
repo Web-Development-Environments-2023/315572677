@@ -291,32 +291,34 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
           <input type="number" id="phone" placeholder="Phone Number">
         </div>
         <div class="input-group">
-          <label for="message">Message: </label>
+          <input hidden type="text" id="subject" placeholder="Mail from my website--">
+        <div class="input-group">
+          <label for="body">Message: </label>
           <textarea name="subject" id="message" placeholder="Write a message" style="height:200px"></textarea>
         </div>
         <div class="input-group">
           <label for="smiley">Select Smiley:</label>
           <select id="smiley" name="smiley">
-            <option value="😀">😀 Happy</option>
-            <option value="😁">😁 Grinning</option>
-            <option value="😊">😊 Smiling with Eyes</option>
-            <option value="😎">😎 Cool</option>
-            <option value="❤️">❤️ Hearts</option>
-            <option value="🤫">🤫 Shushing</option>
-            <option value="🤓">🤓 Nerd</option>
-            <option value="🙄">🙄 Rolling Eyes</option>
-            <option value="🤔">🤔 Thinking</option>
-            <option value="🤐">🤐 Zipper Mouth</option>
-            <option value="🤢">🤢 Nauseated</option>
-            <option value="🤯">🤯 Exploding Head</option>
-            <option value="🤑">🤑 Money Mouth</option>
-            <option value="😠">😠 Angry</option>
-            <option value="😔">😔 Sad</option>
-            <option value="😟">😟 Worried</option>
-            <option value="😢">😢 Crying</option>
-            <option value="😓">😓 Sweating</option>
-            <option value="😴">😴 Sleeping</option>
-            <option value="💩">💩 Poop</option>
+            <option value="&#128515;">😀 Happy</option>
+            <option value="&#128513;">😁 Grinning</option>
+            <option value="&#128522;">😊 Smiling with Eyes</option>
+            <option value="&#128526;">😎 Cool</option>
+            <option value="&#128150;">❤️ Hearts</option>
+            <option value="&#129323;">🤫 Shushing</option>
+            <option value="&#129299;">🤓 Nerd</option>
+            <option value="&#128580;">🙄 Rolling Eyes</option>
+            <option value="&#129300;">🤔 Thinking</option>
+            <option value="&#129296;">🤐 Zipper Mouth</option>
+            <option value="&#129314;">🤢 Nauseated</option>
+            <option value="&#129327;">🤯 Exploding Head</option>
+            <option value="&#129297;">🤑 Money Mouth</option>
+            <option value="&#128544;">😠 Angry</option>
+            <option value="&#128542;">😔 Sad</option>
+            <option value="&#128543;">😟 Worried</option>
+            <option value="&#128546;">😢 Crying</option>
+            <option value="&#128531;">😓 Sweating</option>
+            <option value="&#128564;">😴 Sleeping</option>
+            <option value="&#128169;">💩 Poop</option>
           </select>
           <input type="button" value="Add Emoji" onclick="addEmoji()" style="border-radius: 10px #0059ff; border: dotted; overflow: visible; width: 20%; color: aquamarine; filter: drop-shadow(10px 6px 3px #0059ff);">
           <script>
@@ -329,7 +331,17 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
 
         </div>
         <div class="input-group">
-          <input type="submit" value="Submit">
+          <!-- <input type="submit" value="Submit" onclick="SendMail()> -->
+          <input type="button" value="Submit" onclick="SendMEmail()" style="border-radius: 10px #b3dd1a; border: dashed; overflow: visible; width: 47%; color: rgb(255, 0, 0); filter: drop-shadow(10px 6px 3px #1000f5);">
+          <script>
+            function SendMEmail(){
+              let content = "mailto:shaygila@post.bgu.ac.il?subject=Mail from my website--"
+              + "&body="+ "mail:  "  + encodeURIComponent(document.getElementById('email').value) 
+              + "   subjet:  " + encodeURIComponent(document.getElementById('subject').value)  
+              + "   content:   " +  encodeURIComponent(document.getElementById('message').value);
+              window.location.href = content;
+            }
+          </script>
         </div>
       </form>
     </div>
