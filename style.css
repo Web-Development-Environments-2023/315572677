@@ -11,7 +11,8 @@
 
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 50px;
+	/* padding: 20px 50px; */
+	padding: auto;
 	align-items: center;
 	z-index: 1;
 }
@@ -52,12 +53,16 @@ a {
 	color: rgb(141, 28, 104);
 	background-size: 0 3px, 100% 3px;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 /* Inside body */
 body{
 	font-size: 100%;
 	font-family: 'Courier New', Courier, monospace;
 	background-color: black;
+
 }
 div, section, span, ul, li, a{
 	box-sizing: border-box;
@@ -82,7 +87,7 @@ h1{
 	display: block;
 	text-align: center;
 	color: rgb(231, 70, 12);
-	top: 10%;
+	top: 7%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -91,7 +96,7 @@ h2{
 	display: block;
 	text-align: center;
 	color: rgb(12, 218, 190);
-	top: 6%;
+	top: 4%;
 	left: 50%;
 	padding: 0%;
 	transform: translate(-50%, -50%);
@@ -183,8 +188,10 @@ div.gallery {
 	display: grid;
 	background-color: #c3d80a;
 	height: 28px;
-	top: 240px;
-	left: 663px;
+	/* top: 240px; */
+	/* left: 663px; */
+	top: 33%;
+	left: 45%;
 }
 
 
@@ -262,6 +269,7 @@ tr{
 	font-weight: bold;
 	width: 30%;
 	background-color: rgb(124, 34, 197);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 td{
 	color: rgb(90, 135, 172);
