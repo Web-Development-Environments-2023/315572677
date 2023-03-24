@@ -219,14 +219,25 @@
     <br><br><br><br><br>
     <table border=4  cellpadding="0" cellspacing="0" bordercolor="red" align="center">
       <tr>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 1.0</b></td>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 2.0</b></td>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 3.0</b></td>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 1.0</b></th>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 2.0</b></th>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 3.0</b></th>
       </tr>
       <tr>
-        <td>Web1, also known as the static web, was the first stage of the internet, which started in the late 1980s and lasted until the mid-1990s. During this period, websites were basic and mostly consisted of static pages with text and images. The web was primarily used for the dissemination of information.</td>
-        <td>Web2, also known as the dynamic web, started in the late 1990s and lasted until the mid-2000s. During this period, websites became more interactive, and users could create and share content online. Social media platforms like Facebook, Twitter, and YouTube emerged during this period, and e-commerce sites like Amazon and eBay gained popularity. Web2 was characterized by user-generated content, social networking, and the rise of mobile devices.</td>
-        <td>Web3, also known as the decentralized web, is the current stage of the internet. It started in the mid-2000s and is still evolving. Web3 is characterized by the use of blockchain technology, which enables decentralized apps (dApps) and decentralized finance (DeFi) applications. The aim of Web3 is to create a more decentralized and secure internet, where users have more control over their data and privacy. Web3 is also focused on enabling machine-to-machine communication and developing the Internet of Things (IoT).</td>
+        <td>Web1, known as the static web, was the first stage of the internet, which started in the late 1980s and lasted until the mid-1990s.
+           During this period, websites were basic and mostly consisted of static pages with text and images.
+            The web was primarily used for the dissemination of information.</td>
+
+        <td>Web2, known as the dynamic web, started in the late 1990s and lasted until the mid-2000s.
+           During this period, websites became more interactive, and users could create and share content online.
+            Social media platforms like Facebook, Twitter, and YouTube emerged during this period, and e-commerce sites like Amazon and eBay gained popularity.
+             Web2 was characterized by user-generated content, social networking, and the rise of mobile devices.</td>
+
+        <td>Web3, known as the decentralized web, is the current stage of the internet.
+           It started in the mid-2000s and is still evolving.
+            Web3 is characterized by the use of blockchain technology, which enables decentralized apps (dApps) and decentralized finance (DeFi) applications.
+             The aim of Web3 is to create a more decentralized and secure internet, where users have more control over their data and privacy.
+              Web3 is also focused on enabling machine-to-machine communication and developing the Internet of Things (IoT).</td>
       </tr>
       <tr>
         <td>Typically Read Only</td>
@@ -250,21 +261,22 @@
     <br><br><br><br><br>
     <table border=4  cellpadding="0" cellspacing="0" bordercolor="red" align="center">
       <tr>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 1.0</b></td>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 2.0</b></td>
-        <td style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 3.0</b></td>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 1.0</b></th>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 2.0</b></th>
+        <th style="text-decoration: overline underline wavy rgb(183, 0, 255);"><b>Web 3.0</b></th>
       </tr>
       <tr>
         <td>
           A search for "side effects of drugs" on Web1 would likely result in a list of static portal web pages that contain information on the topic.
            These pages would likely be simple HTML pages with text and images, and the information would be presented in a static format that is not interactive.
         </td>
+        
         <td>
           A search for "side effects of drugs" on Web2 would likely provide a result in a list of dynamic web pages that contain information on the topic,
            but it may require some filtering and prioritization to make the most of the available resources.
             These pages would likely be built using JavaScript and Ajax, and the information would be presented in a dynamic format that is interactive.
         <td>
-          It's difficult to predict exactly how a search query for "side effects of drugs" would appear on Web3, as it will depend on the specific decentralized application (dApp) or decentralized search engine used.
+          a search query for "side effects of drugs" would appear on Web3, as it will depend on the specific decentralized application (dApp) or decentralized search engine used.
 For example, a decentralized app (dApp) built on blockchain technology could provide information on drug side effects in a more transparent and secure manner.
  Users could potentially access this information without relying on centralized sources, such as pharmaceutical companies or government agencies, and the information could be verified by a decentralized network of users.
         </td>
@@ -338,7 +350,7 @@ For example, a decentralized app (dApp) built on blockchain technology could pro
               let content = "mailto:shaygila@post.bgu.ac.il?subject=Mail from my website--"
               + "&body="+ "mail sender:  "  + encodeURIComponent(document.getElementById('email').value) 
               + "   content:   " +  encodeURIComponent(document.getElementById('message').value)
-              + addEmoji();
+              + document.getElementById("smiley").value;
               window.location.href = content;
             }
           </script>
